@@ -5,3 +5,9 @@
     <%= link_to "ログイン", login_path, class: "btn btn-lg btn-primary" %>
     <%= link_to "ログアウト", logout_path, class: "btn btn-lg btn-primary", data: { "turbo-method": :delete } %>
   </div>
+
+<% if logged_in? %>
+  ddd
+<% else %>
+  mmmmmmmmm
+<% end %>
