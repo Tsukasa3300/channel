@@ -1,0 +1,16 @@
+<%= @user.name %> 
+<%= @user.email %>
+
+<h2>投稿内容</h2>
+<% @posts.each do |post| %>
+  <%= link_to post.content, post %>
+<% end %>
+
+
+
+<%= form_with(model: @post, local: true) do |f| %>
+  <div class="field">
+    <%= f.text_area :content, placeholder: "投稿内容" %>
+  </div>
+  <%= f.submit "投稿する", class: "btn btn-primary" %>
+<% end %>
