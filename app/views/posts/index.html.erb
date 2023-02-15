@@ -2,4 +2,8 @@
 
 <% @posts.each do |post| %> 
 <%= link_to post.content, post %>
+<% if current_user?(post.user) %>
+      <%= link_to "投稿を削除", post, data: { "turbo-method": :delete,
+                                               turbo_confirm: "削除してもよろしいですか？" } %>
+    <% end %>
 <% end %>

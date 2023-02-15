@@ -1,8 +1,11 @@
+<%= @post.user.name %>
 <%= @post.content %>
+
 
 <h2>コメント</h2>
 <% @comments.each do |c| %>
   <%= c.content %>
+  by <%= c.user.name %>
 <% end %>
 <%= form_with(model:  [@post, @comment]) do |f| %>
   <div class="field">
