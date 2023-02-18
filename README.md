@@ -1,25 +1,12 @@
-# README
+# ブログアプリ
+各ユーザーが投稿をでき、それぞれの投稿にユーザー全員がコメントを書き込めるアプリ
+初めてのアプリ開発となります
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリURL＝＞
+https://channel1.herokuapp.com/
 
-Things you may want to cover:
+# 技術スタック
+フロントエンド：erb,html5,scss,bootstrap
+バックエンド：Ruby3.1.2, Rails7.0.3
+インフラ：heroku
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-"# -" 
