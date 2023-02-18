@@ -1,12 +1,14 @@
-<%= @post.user.name %>
-<%= @post.content %>
+<br>
+<br>
+<h2>投稿したユーザー:<%= @post.user.name %>、投稿内容:<%= @post.content %></h2>
 
 
-<h2>コメント</h2>
+<h3>この投稿にコメントを残す</h2>
 <% @comments.each do |c| %>
-  <%= c.content %>
-  by <%= c.user.name %>
+  <h3><%= c.content %>
+  by <%= c.user.name %></h3>
 <% end %>
+
 <%= form_with(model:  [@post, @comment]) do |f| %>
   <div class="field">
     <%= f.text_area :content, placeholder: "コメント内容" %>

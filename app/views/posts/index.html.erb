@@ -1,9 +1,11 @@
-<h1>投稿内容</h1>
+<br>
+<br>
+<h1>投稿一覧</h1>
 
 <% @posts.each do |post| %> 
-<%= link_to post.content, post %>
+<h3><%= link_to post.content, post %></h3>
 <% if current_user?(post.user) %>
-      <%= link_to "投稿を削除", post, data: { "turbo-method": :delete,
+      <%= link_to "(投稿を削除)", post, data: { "turbo-method": :delete,
                                                turbo_confirm: "削除してもよろしいですか？" } %>
     <% end %>
 <% end %>

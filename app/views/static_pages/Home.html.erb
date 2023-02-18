@@ -1,12 +1,12 @@
-
+<br>
+<br>
     <h1>掲示板</h1>
 
     
 
 <% if logged_in? %>
-      <%= link_to "ログアウト", logout_path, class: "btn btn-lg btn-primary", data: { "turbo-method": :delete } %>
+
 <% else %>
       <%= link_to "新規登録はこちら", signup_path, class: "btn btn-lg btn-primary" %>
-    <%= link_to "ログイン", login_path, class: "btn btn-lg btn-primary" %>
 
 <% end %>
