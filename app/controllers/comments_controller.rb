@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
             flash[:success] = "コメントしました"
             redirect_to [@post]
           else
-            redirect_to root_url
+            redirect_to request.referrer, status: :see_other
           end
       end
     

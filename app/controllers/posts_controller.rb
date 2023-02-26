@@ -19,7 +19,7 @@ def create
       flash[:success] = "投稿しました"
       redirect_to request.referer
     else
-      render 'static_pages/home', status: :unprocessable_entity
+      redirect_to request.referrer, status: :see_other
     end
 end
 

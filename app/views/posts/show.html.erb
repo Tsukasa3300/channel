@@ -1,6 +1,7 @@
 <br>
 <br>
 <h2>投稿したユーザー:<%= @post.user.name %>、投稿内容:<%= @post.content %></h2>
+<%= render 'like_form' %>
 
 
 <h3>この投稿にコメントを残す</h2>
@@ -15,3 +16,4 @@
   </div>
   <%= f.submit "コメントする", class: "btn btn-primary" %>
 <% end %>
+
