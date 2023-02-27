@@ -14,6 +14,7 @@ class User < ApplicationRecord
     has_secure_password
 
  def like(post)
+  p post, "test1"
     likes_posts << post
   end
  

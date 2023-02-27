@@ -1,5 +1,5 @@
   <% if current_user.like?(@post) %>
-    
+    <p>いいねしてます</p>
   <% else %>
   <%=form_with(model:current_user.likes.build ) do |f| %>
 <%=f.hidden_field :user_id,value: current_user.id %>
@@ -7,4 +7,4 @@
 <%=f.submit "いいね！",class: "btn btn-primary"  %>
 <% end  %>
   <% end %>
-  </div>
+</div>
