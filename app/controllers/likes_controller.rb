@@ -1,7 +1,7 @@
 class LikesController < ApplicationController
     def create
-        post = Post.find(params[:post_id])
-        current_user.like(post)
+        @post = Post.find(params[:post_id])
+        current_user.like(@post)
         redirect_to root_url
       end
      

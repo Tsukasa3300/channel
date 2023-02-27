@@ -1,4 +1,0 @@
-<%= form_with(model: current_user.likes.find_by(likes_posts),
-              html: { method: :delete }) do |f| %>
-  <%= f.submit "フォロー解除", class: "btn" %>
-<% end %>
