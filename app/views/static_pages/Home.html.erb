@@ -1,12 +1,9 @@
 <br>
 <br>
-    <h1>掲示板</h1>
-
-    
+<h1>掲示板</h1>
 
 <% if logged_in? %>
-
+   
 <% else %>
-      <%= link_to "新規登録はこちら", signup_path, class: "btn btn-lg btn-primary" %>
-
+  <%= link_to "新規登録はこちら", signup_path, class: "btn btn-lg btn-primary" %>
 <% end %>

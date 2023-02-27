@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :destroy]
+  
   def index
     @users=User.all
   end
@@ -10,7 +11,6 @@ class UsersController < ApplicationController
     if logged_in?
       @post  = current_user.posts.build
     end
-
   end
 
   def create
@@ -28,15 +28,12 @@ class UsersController < ApplicationController
   def destroy
   end
 
-
-
   def new
     @user = User.new
   end
 
 
   def user_params
-    params.require(:user).permit(:name, :email, :password,
-                                 :password_confirmation)
+    params.require(:user).permit(:name, :email, :password,:password_confirmation)
   end
 end

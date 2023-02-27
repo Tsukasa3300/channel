@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       log_in user
       redirect_to forwarding_url || user
     else
-      flash.now[:danger] = 'Invalid email/password combination'
+      flash.now[:danger] = 'ログインに失敗しました'
       render 'new', status: :unprocessable_entity
     end
   end
@@ -19,4 +19,5 @@ class SessionsController < ApplicationController
     log_out
     redirect_to root_url, status: :see_other
   end
-  end
+  
+end
