@@ -3,7 +3,7 @@
 初めてのアプリ開発となります
 
 # アプリURL＝＞
-https://channel1.herokuapp.com/
+https://railschannel.herokuapp.com/
 
 # 技術スタック
 フロントエンド：erb,html5,scss,bootstrap
